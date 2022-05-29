@@ -31,6 +31,8 @@
     --footer-address: #FFFFFF;
     --footer-address-size: 14px;
     --footer-address-contact: #FFFFFF99;
+    --container-padding: 215px;
+    --container-width: 1600px;
 }
 
 body {
@@ -38,16 +40,66 @@ body {
     color: var(--text-color);
 }
 
-.center {
-    text-align: center;
+ul {
+    list-style: none;
 }
 
-.inline {
-    display: inline;
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.container {
+    padding: 0 var(--container-padding);
+    width: var(--container-width);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.flexbox-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+
+}
+
+.portfolio-picture {
+    margin: 0 15px 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-picture-text {
+    padding: 20px 24px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px 30px;
 }
 
 .inline-block {
     display: inline-block;
+}
+
+.inline {
+    display: inline;
 }
 
 .pre {
@@ -56,21 +108,25 @@ body {
 
 .title {
     text-align: center;
+    font-size: 44px;
 }
 
 .our-team-container {
     background-color: var(--our-team-container-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our-team-element {
     background-color: var(--our-team-element-background);
-    display: inline-block;
+    margin: 0 15px;
 }
 
 .logo-link {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: black;
+    font-size: 26px;
 }
 
 .logo-start {
@@ -81,12 +137,16 @@ body {
     background-color: var(--button-color);
     color: var(--button-text-color);
     cursor: pointer;
+    font-size: 16px;
+
 }
 
 .order-button {
     background-color: var(--button-active-color);
     color: var(--button-active-text-color);
     cursor: pointer;
+    font-size: 16px;
+    padding: 10px 41px 10px 42px;
 }
 
 .button:hover, .button:focus {
@@ -120,6 +180,9 @@ body {
     font-size: var(--portfolio-navigation-font-size);
     font-weight: var(--portfolio-navigation-font-weight);
     line-height: var(--portfolio-navigation-line-height);
+    margin: 0 15px;
+    border: 0 solid transparent;
+    padding: 6px 22px;
 }
 
 .picture-title {
@@ -141,6 +204,7 @@ body {
 
 .address {
     color: var(--address);
+    margin: 0 25px;
 }
 
 .footer-logo {
@@ -154,4 +218,24 @@ body {
 
 .footer-address-contact > a.link {
     color: var(--footer-address-contact);
+}
+
+.portfolio-navigation-container {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer > *:nth-child(1) {
+    margin-bottom: 20px;
+
+}
+
+.footer > * {
+    margin-bottom: 9px;
+    display: block;
 }

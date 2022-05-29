@@ -8,32 +8,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link href="node_modules/modern-normalize/modern-normalize.css" rel="stylesheet">
   <title>Homework 1</title>
 </head>
 
 <body>
-<header>
-  <a class="logo-link" href="index.html"><span class="logo-start">Web</span>Studio</a>
-  <nav class="inline">
-    <ul class="inline">
-      <li class="header-link"><a class="link" href="index.html">Agencja</a></li>
-      <li class="header-link"><a class="link" href="portfolio.html">Portfolio</a></li>
-      <li class="header-link"><a class="link header-link" href="">Kontakt</a></li>
-    </ul>
-  </nav>
-  <a class="link header-link address" href="mailto:info@devstudio.com">info@devstudio.com</a>
-  <a class="link header-link address" href="tel:+48111111111">+48 111 111 111</a>
+<header class="container header-container">
+  <div>
+    <a class="logo-link" href="index.html"><span class="logo-start">Web</span>Studio</a>
+    <nav class="inline">
+      <ul class="inline">
+        <li class="header-link"><a class="link" href="index.html">Agencja</a></li>
+        <li class="header-link"><a class="link" href="portfolio.html">Portfolio</a></li>
+        <li class="header-link"><a class="link header-link" href="">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <a class="link header-link address" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <a class="link header-link address" href="tel:+48111111111">+48 111 111 111</a>
+  </div>
 </header>
 <main>
-  <section class="background">
-    <h1 class="title pre">EFEKTYWNE ROZWIĄZANIA
+  <section class="background container flexbox-header">
+    <h1 class="title">EFEKTYWNE ROZWIĄZANIA <br>
       DLA WASZEGO BIZNESU</h1>
-    <div class="center">
-      <button class="order-button" type="button">Zamów usługę</button>
-    </div>
+    <button class="order-button" type="button">Zamów usługę</button>
   </section>
-  <section>
-    <ul class="center">
+  <section class="container">
+    <ul class="flexbox">
       <li class="inline-block">
         <h4>LOREM IPSUM</h4>
         <span class="pre">Lorem ipsum dolor sit amet, consectetur
@@ -61,16 +64,18 @@ non sodales dui. Interdum et malesuada</span>
     </ul>
   </section>
 
-  <section class="center">
+  <section class="container">
     <h2>Czym się zajmujemy</h2>
-    <img class="inline" alt="Laptop na fioletowym tle" height="294" src="images/laptop.jpg" width="370" />
-    <img class="inline" alt="Telefon z tabletem" height="294" src="images/telefon.jpg" width="370" />
-    <img class="inline" alt="Barwy z tabletem" height="294" src="images/tablet.jpg" width="370" />
+    <ul class="flexbox">
+      <li><img class="inline" alt="Laptop na fioletowym tle" height="294" src="images/laptop.jpg" width="370" /></li>
+      <li><img class="inline" alt="Telefon z tabletem" height="294" src="images/telefon.jpg" width="370" /></li>
+      <li><img class="inline" alt="Barwy z tabletem" height="294" src="images/tablet.jpg" width="370" /></li>
+    </ul>
   </section>
 
-  <section class="our-team-container center">
+  <section class="container our-team-container">
     <h2>Nasz zespół</h2>
-    <ul>
+    <ul class="flexbox">
       <li class="our-team-element">
         <img alt="Product Designer" height="260" src="images/John Doe.jpg" width="270" />
         <div class="picture-title">
@@ -102,15 +107,14 @@ non sodales dui. Interdum et malesuada</span>
     </ul>
   </section>
 </main>
-<footer class="background">
+<footer class="background container footer">
   <a class="logo-link footer-logo" href="/"><span class="logo-start">Web</span>Studio</a>
-  <address class="footer-address">
-    m.Warszawa, <br />
-    Aleje Jerozolimskie, 21, <br />
-  </address>
+  <address class="footer-address">m.Warszawa, Aleje Jerozolimskie 21</address>
 
   <address class="footer-address-contact">
     <a class="link" href="mailto:info@example.com">info@example.com</a>
+  </address>
+  <address class="footer-address-contact">
     <a class="link" href="tel:+48 111 111 111">+48 111 111 111</a>
   </address>
 </footer>
