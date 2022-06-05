@@ -58,6 +58,7 @@ h2 {
 
 .container {
     width: var(--container-width);
+    margin: 0 auto;
 }
 
 .header-container {
