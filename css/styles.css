@@ -31,8 +31,7 @@
     --footer-address: #FFFFFF;
     --footer-address-size: 14px;
     --footer-address-contact: #FFFFFF99;
-    --container-padding: 215px;
-    --container-width: 1600px;
+    --container-width: 1200px;
 }
 
 body {
@@ -50,7 +49,6 @@ h2 {
 }
 
 .container {
-    padding: 0 var(--container-padding);
     width: var(--container-width);
 }
 
@@ -71,8 +69,8 @@ h2 {
 }
 
 .portfolio-picture {
-    margin: 0 15px 30px;
     border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
 }
 
 .portfolio-picture-text {
@@ -90,16 +88,8 @@ h2 {
     justify-content: center;
 }
 
-li {
-    margin: 0 15px 30px;
-}
-
 .inline-block {
     display: inline-block;
-}
-
-.inline {
-    display: inline;
 }
 
 .pre {
@@ -119,7 +109,6 @@ li {
 
 .our-team-element {
     background-color: var(--our-team-element-background);
-    margin: 0 15px;
 }
 
 .logo-link {
@@ -168,6 +157,7 @@ li {
     font-weight: var(--header-link-font-weight);
     line-height: var(--header-link-line-height);
     display: inline;
+    margin-right: 46px;
 }
 
 .portfolio-picture-title {
@@ -180,9 +170,9 @@ li {
     font-size: var(--portfolio-navigation-font-size);
     font-weight: var(--portfolio-navigation-font-weight);
     line-height: var(--portfolio-navigation-line-height);
-    margin: 0 15px;
     border: 0 solid transparent;
     padding: 6px 22px;
+    margin: 0 3px;
 }
 
 .picture-title {
@@ -204,7 +194,6 @@ li {
 
 .address {
     color: var(--address);
-    margin: 0 25px;
 }
 
 .footer-logo {
@@ -238,4 +227,12 @@ li {
 .footer > * {
     margin-bottom: 9px;
     display: block;
+}
+
+.flexbox-spaces {
+    justify-content: space-between;
+}
+
+.lorem-ipsum-element {
+    width: 270px;
 }
