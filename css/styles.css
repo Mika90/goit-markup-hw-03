@@ -116,9 +116,12 @@ h2 {
 }
 
 .our-team-container {
-    background-color: var(--our-team-container-color);
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.our-team-background {
+    background-color: var(--our-team-container-color);
 }
 
 .our-team-element {
@@ -172,7 +175,6 @@ h2 {
     font-weight: var(--header-link-font-weight);
     line-height: var(--header-link-line-height);
     display: inline;
-    margin-right: 46px;
 }
 
 .portfolio-picture-title {
