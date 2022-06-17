@@ -177,7 +177,12 @@ h2 {
     font-size: var(--header-link-font-size);
     font-weight: var(--header-link-font-weight);
     line-height: var(--header-link-line-height);
-    display: inline;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.header-link.phone {
+    margin-right: 0;
 }
 
 .portfolio-picture-title {
