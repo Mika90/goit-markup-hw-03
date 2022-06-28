@@ -70,6 +70,7 @@ h2 {
 
 .header {
     border-bottom: 1px solid var(--header-container-border-color);
+    height: 80px;
 }
 
 .flexbox-header {
@@ -97,6 +98,8 @@ h2 {
 .flexbox-spaces {
     display: flex;
     justify-content: space-between;
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .portfolio-flexbox {
